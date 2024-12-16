@@ -1,0 +1,43 @@
+{
+  "name": "curso_react_native_metacritic_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "lint": "expo lint",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~4.0.0",
+    "eslint": "8",
+    "eslint-config-expo": "~8.0.1",
+    "expo": "~52.0.18",
+    "expo-constants": "~17.0.3",
+    "expo-status-bar": "~2.0.0",
+    "nativewind": "^4.1.23",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-native": "0.76.5",
+    "react-native-reanimated": "~3.16.1",
+    "react-native-safe-area-context": "4.12.0",
+    "react-native-svg": "15.8.0",
+    "react-native-web": "~0.19.13",
+    "tailwindcss": "^3.4.16"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/eslint-parser": "^7.25.9",
+    "@babel/preset-env": "^7.26.0",
+    "babel-preset-expo": "^12.0.4",
+    "eslint": "^8.57.0",
+    "eslint-config-expo": "~8.0.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react-native": "^4.1.0",
+    "prettier": "^3.4.2"
+  },
+  "private": true
+}
