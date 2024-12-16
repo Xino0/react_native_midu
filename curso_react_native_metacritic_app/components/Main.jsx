@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
 import { FlatList, View, ActivityIndicator } from 'react-native';
 import { AnimatedGameCard } from './GameCard';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Logo } from './logo';
 
 export function Main() {
+  console.log('Main');
   const [games, setGames] = useState([]);
-  /* const insets = useSafeAreaInsets(); */
+  const insets = useSafeAreaInsets();
 
   useEffect(() => {
     // Simulate fetching games for testing
@@ -56,9 +58,9 @@ export function Main() {
   }, []);
 
   return (
-    <View /* style={{ paddingTop: insets.top, paddingBottom: insets.top }} */>
-      <View className="items-center">
-        <Logo className="mb-2" />
+    <View style={{ paddingTop: insets.top, paddingBottom: insets.top }}>
+      <View className="items-center pb-2">
+        <Logo />
       </View>
       {games.length === 0 ? (
         <ActivityIndicator color={'#fff'} size={'large'} />

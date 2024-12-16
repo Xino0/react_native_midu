@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { StyleSheet, Text, View, Image, Animated } from 'react-native';
+import { Text, View, Image, Animated } from 'react-native';
 
 export function GameCard({ game }) {
   return (
@@ -38,36 +38,3 @@ export function AnimatedGameCard({ game, index }) {
     </Animated.View>
   );
 }
-
-const styles = StyleSheet.create({
-  card: {
-    marginBottom: 20,
-    alignItems: 'center',
-    backgroundColor: '#1a1a1a',
-    padding: 10,
-    borderRadius: 10,
-    width: 200,
-  },
-  image: {
-    width: 107,
-    height: 147,
-    borderRadius: 10,
-  },
-  title: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    marginVertical: 5,
-    color: '#fff',
-  },
-  description: {
-    fontSize: 14,
-    color: '#e90',
-    textAlign: 'center',
-  },
-  score: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: 'green',
-    marginTop: 10,
-  },
-});
