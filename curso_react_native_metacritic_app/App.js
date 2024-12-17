@@ -7,12 +7,13 @@ import './global.css';
 
 export default function App() {
   console.log('App');
-  NavigationBar.setBackgroundColorAsync('#06b6d4');
+  NavigationBar.setBackgroundColorAsync('rgba(0, 0, 0, 0)'); // Fondo transparente
+  NavigationBar.setButtonStyleAsync('light');
 
   return (
     <SafeAreaProvider>
       <View className="h-full w-full bg-cyan-500 flex-1">
-        <StatusBar style="dark" />
+        <StatusBar style="light" />
         <Main />
       </View>
     </SafeAreaProvider>
